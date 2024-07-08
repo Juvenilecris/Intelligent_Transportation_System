@@ -43,7 +43,7 @@
 ```
 微信小程序作为应用端，负责将云端接收到的实时交通数据进行显示，并将车辆行驶的数据发送给Python端，以及使平台向设备发送控制命令。
 ```
-![微信小程序页面效果图]()
+![微信小程序页面效果图](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2.png)
 - Python端
 ```
 python端作为辅助设备端，将应用端发送的车辆行驶数据进行处理，并使用机器学习算法判断道路是否处于拥挤状态，再将状态上报给云端，以及负责在模拟拥堵功能时随机生成车辆信息，并将车辆信息上报云端。
