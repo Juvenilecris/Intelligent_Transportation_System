@@ -1,0 +1,70 @@
+<!--pages/ceshi/ceshi.wxml -->  
+
+<!-- 导航栏 -->
+<view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+        智慧交通
+    </view>
+</view>
+<!-- 主页面 -->
+<view class="root">
+  <image class='background-image' src='/images/road_2.png' mode="aspectFill"></image>
+  <view class="content">
+    <!-- 拥挤按钮 -->
+    <button class="congestion-button" bindtap="touchBtn_setCommand_congestion">模拟拥挤</button>
+    <button class="not-congestion-button" bindtap="touchBtn_setCommand_not_congestion">取消模拟</button>
+    <!-- 拥挤状态 -->
+    <view class="congestion-state {{Alarm.Is_congestion ? 'red-circle' : 'blue-circle'}}">
+      <text>{{Alarm.Is_congestion ? '拥堵' : '正常'}}</text>
+    </view>
+    <!-- 应急按钮 -->
+    <button class="emergency-button" bindtap="touchBtn_setCommand_emergency">应急</button>
+    <!-- 应急状态 -->
+    <view class="emergency-state {{Alarm.Is_emergency==='true' ? 'red-circle' : 'none'}}">
+      <text>{{Alarm.Is_emergency==='true' ? '急' : ''}}</text>
+    </view>
+    <!-- 测速仪显示 -->
+    <text class="{{Speed.Last_Speed1 > 30 ? 'speed1-red-text' : 'speed1-green-text'}}">{{Speed.Last_Speed1}}</text>
+    <text class="{{Speed.Last_Speed2 > 30 ? 'speed2-red-text' : 'speed2-green-text'}}">{{Speed.Last_Speed2}}</text>
+    <text class="{{Speed.Last_Speed3 > 30 ? 'speed3-red-text' : 'speed3-green-text'}}">{{Speed.Last_Speed3}}</text>
+    <!-- 红绿灯显示 -->
+    <text class="traffic-host-forward" style="color:{{TrafficLight.Current_state_host_forward}}">{{TrafficLight.Current_time_host_forward}}</text>
+    <text class="traffic-host-left" style="color:{{TrafficLight.Current_state_host_left}}">{{TrafficLight.Current_time_host_left}}</text>
+    <text class="traffic-guest-forward" style="color:{{TrafficLight.Current_state_guest_forward}}">{{TrafficLight.Current_time_guest_forward}}</text>
+    <text class="traffic-guest-left" style="color:{{TrafficLight.Current_state_guest_left}}">{{TrafficLight.Current_time_guest_left}}</text>
+    <!-- 道路状况 -->
+    <view class='Road-1'>
+      <text style="font-weight:bold; font-size:12px">Road 1</text>
+      <text style="font-size:9px">平均车速:</text>
+      <text style="font-size:9px">{{Speed.Average_speed1}} Km/h</text>
+      <text style="font-size:9px">总车流量:</text>
+      <text style="font-size:9px">{{Speed.Flow1}} 辆</text>
+      <text style="font-size:9px">最近一小时平均车速:</text>
+      <text style="font-size:9px">{{Speed.Average_speed_last_hour1}} Km/h</text>
+      <text style="font-size:9px">最近一小时车流量:</text>
+      <text style="font-size:9px">{{Speed.Flow_last_hour1}} 辆</text>
+    </view>
+    <view class='Road-2'>
+      <text style="font-weight:bold; font-size:12px">Road 2</text>
+      <text style="font-size:9px">平均车速:</text>
+      <text style="font-size:9px">{{Speed.Average_speed2}} Km/h</text>
+      <text style="font-size:9px">总车流量:</text>
+      <text style="font-size:9px">{{Speed.Flow2}} 辆</text>
+      <text style="font-size:9px">最近一小时平均车速:</text>
+      <text style="font-size:9px">{{Speed.Average_speed_last_hour2}} Km/h</text>
+      <text style="font-size:9px">最近一小时车流量:</text>
+      <text style="font-size:9px">{{Speed.Flow_last_hour2}} 辆</text>
+    </view>
+    <view class='Road-3'>
+      <text style="font-weight:bold; font-size:12px">Road 3</text>
+      <text style="font-size:9px">平均车速:</text>
+      <text style="font-size:9px">{{Speed.Average_speed3}} Km/h</text>
+      <text style="font-size:9px">总车流量:</text>
+      <text style="font-size:9px">{{Speed.Flow3}} 辆</text>
+      <text style="font-size:9px">最近一小时平均车速:</text>
+      <text style="font-size:9px">{{Speed.Average_speed_last_hour3}} Km/h</text>
+      <text style="font-size:9px">最近一小时车流量:</text>
+      <text style="font-size:9px">{{Speed.Flow_last_hour3}} 辆</text>
+    </view>
+  </view>
+</view>

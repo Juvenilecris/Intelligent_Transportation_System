@@ -1,0 +1,231 @@
+.root {
+  width: 100%;
+  height: 90%;
+  background-color: #70c7da;
+  position: relative;
+}
+
+.background-image{
+  height : 100%;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.nav {
+  background-color: #000;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+.nav-title {
+  color: #fff; /* 设置文字颜色为黑色 */
+  font-size: 20px; /* 设置字体大小 */
+  margin-top: 35px; /* 向下移动10个像素 */
+  font-weight: bold; /* 设置文字加粗 */
+}
+/* 测速仪文字 */
+.speed1-red-text {  
+  color: rgb(239, 11, 11); 
+  position:absolute;
+  top:365px;
+  left:103px;
+  font-size:20px;
+  font-weight: bold;  
+}   
+.speed1-green-text {  
+  color: rgb(12, 173, 12); 
+  position:absolute;
+  top:365px;
+  left:103px;
+  font-size:20px;
+  font-weight: bold; 
+}
+.speed2-red-text {  
+  color: rgb(239, 11, 11); 
+  position:absolute;
+  top:495px;
+  left:316px;
+  font-size:20px;
+  font-weight: bold;  
+}   
+.speed2-green-text {  
+  color: rgb(12, 173, 12); 
+  position:absolute;
+  top:495px;
+  left:316px;
+  font-size:20px;
+  font-weight: bold; 
+}
+.speed3-red-text {  
+  color: rgb(239, 11, 11); 
+  position:absolute;
+  top:127px;
+  left:35px;
+  font-size:20px;
+  font-weight: bold;  
+}   
+.speed3-green-text {  
+  color: rgb(12, 173, 12); 
+  position:absolute;
+  top:127px;
+  left:35px;
+  font-size:20px;
+  font-weight: bold; 
+}
+/* 拥堵信号 */
+.congestion-button {
+  display: inline-block;
+  position: absolute;
+  top: 307px;
+  left: 278px;
+  width: 50px !important;
+  padding: 5px 10px; 
+  border: 2px solid #2d08b2; 
+  border-radius: 10px; 
+  background-color: #2d08b2; 
+  color: #fff; 
+  font-size: 16px;
+  text-align: center; 
+  text-decoration: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+.not-congestion-button {
+  display: inline-block;
+  position: absolute;
+  top: 307px;
+  left: 338px;
+  width: 50px !important;
+  padding: 5px 10px; 
+  border: 2px solid #2d08b2; 
+  border-radius: 10px; 
+  background-color: #2d08b2; 
+  color: #fff; 
+  font-size: 16px; 
+  text-align: center; 
+  text-decoration: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s;
+}
+.congestion-state {
+  position: absolute;
+  top: 3px; 
+  left: 1px; 
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red-circle {
+  background-color: red;
+  color: white;
+}
+.blue-circle {
+  background-color: blue;
+  color: white;
+}
+/* 应急信号 */
+.emergency-button {
+  display: inline-block;
+  position: absolute;
+  top: 669px;
+  left: 29px;
+  width: 50px !important;
+  padding: 5px 10px; /* 上下边距，左右边距 */
+  border-radius: 12px; /* 圆角半径 */
+  background-color: #f16807; /* 背景色 */
+  color: #fff; /* 文本颜色 */
+  font-size: 16px; /* 字体大小 */
+  text-align: center; /* 文本居中对齐 */
+  text-decoration: none; /* 去除文本下划线 */
+}
+.emergency-state {
+  position: absolute;
+  top: 3px;
+  left: 45px; 
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 红绿灯信号 */
+.traffic-host-forward {
+  position: absolute;
+  top: 100px;
+  left: 273px;
+  background-color: rgb(82, 76, 76); 
+  font-size: 20px;
+  padding: 2px; 
+  border: 1px solid rgb(113, 108, 108);
+}
+.traffic-host-left {
+  position: absolute;
+  top: 70px;
+  left: 202px;
+  background-color: rgb(82, 76, 76); 
+  font-size: 20px;
+  padding: 2px; 
+  border: 1px solid rgb(113, 108, 108);
+}
+.traffic-guest-forward {
+  position: absolute;
+  top: 100px;
+  left: 133px;
+  background-color: rgb(82, 76, 76); 
+  font-size: 20px;
+  padding: 2px; 
+  border: 1px solid rgb(113, 108, 108);
+}
+.traffic-guest-left {
+  position: absolute;
+  top: 85px;
+  left: 78px;
+  background-color: rgb(82, 76, 76); 
+  font-size: 20px;
+  padding: 2px; 
+  border: 1px solid rgb(113, 108, 108);
+}
+/* 道路状况 */
+.Road-1 {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  height: 127px;
+  position: absolute;
+  top:305px;
+  left:2px;
+  background-color: rgba(0,0,0,0.5);
+}
+.Road-3 {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  height: 127px;
+  position: absolute;
+  top:5px;
+  left:305px;
+  background-color: rgba(0,0,0,0.5);
+}
+.Road-2 {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  height: 122px;
+  position: absolute;
+  top:628px;
+  left:290px;
+  background-color: rgba(0,0,0,0.5);
+}
