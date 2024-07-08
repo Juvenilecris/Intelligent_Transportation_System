@@ -12,33 +12,29 @@
 
 ![系统框架图](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6%E5%9B%BE.png)
 
-
-
 ## 硬件端
 -  硬件要求：Hi3861V100核心板，51单片机最小系统，YL-62避障传感器，低电平触发蜂鸣器，红绿灯模块，74HC595驱动的二位共阴极数码管模块；硬件搭建效果图及组成结构图如下图所示。
 ![硬件系统总体框图](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E4%BD%93%E6%A1%86%E5%9B%BE.png)
 -   Hi3861V100核心板
 ![Hi3861V100为核心板的智能家居套件](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/Hi3861V100%E4%B8%BA%E6%A0%B8%E5%BF%83%E6%9D%BF%E7%9A%84%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E5%A5%97%E4%BB%B6.jpg)
 -  YL-62避障传感器
-![YL-62避障传感器]()
+![YL-62避障传感器](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/YL-62%E5%9E%8B%E7%BA%A2%E5%A4%96%E4%BC%A0%E6%84%9F%E5%99%A8.jpg)
 
-- 软件系统总体框图
-![软件系统总体框图]()
 - 红绿灯模块
-![红绿灯模块]()
+![红绿灯模块](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/%E7%BA%A2%E7%BB%BF%E7%81%AF%E6%A8%A1%E5%9D%97.jpg)
 - 74HC595驱动的二位共阴极数码管模块
-![74HC595驱动的二位共阴极数码管模块]()
+![74HC595驱动的二位共阴极数码管模块](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/74HC595%E9%A9%B1%E5%8A%A8%E7%9A%84%E4%BA%8C%E4%BD%8D%E5%85%B1%E9%98%B4%E6%9E%81%E6%95%B0%E7%A0%81%E7%AE%A1%E6%A8%A1%E5%9D%97.jpg)
 
 ### 道路模型
 - 道路模型简绘图
-![道路模型简绘图]()
+![道路模型简绘图](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/%E9%81%93%E8%B7%AF%E6%A8%A1%E5%9E%8B%E5%9B%BE.png)
 
 ## 软件端
 - 软件系统介绍
 ```
 系统使用华为云Iot基础版实例作为云端，微信小程序作为应用端，Python端作为辅助设备端。由硬件开发板将交通数据上报给云端。软件系统的总体框图如下所示。
 ```
-![软件系统总体框图]()
+![软件系统总体框图](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/%E8%BD%AF%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E4%BD%93%E6%A1%86%E5%9B%BE.png)
 - 设备端
 ```
 设备端实现交通信号的变化与车辆速度、流量数据的采集，并上报给云端。同时会响应来自平台的控制命令。
