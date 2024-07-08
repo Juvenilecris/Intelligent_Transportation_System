@@ -18,7 +18,7 @@
 -  硬件要求：Hi3861V100核心板，51单片机最小系统，YL-62避障传感器，低电平触发蜂鸣器，红绿灯模块，74HC595驱动的二位共阴极数码管模块；硬件搭建效果图及组成结构图如下图所示。
 ![硬件系统总体框图](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E4%BD%93%E6%A1%86%E5%9B%BE.png)
 -   Hi3861V100核心板
-![Hi3861V100为核心板的智能家居套件]()
+![Hi3861V100为核心板的智能家居套件](https://github.com/Juvenilecris/Intelligent_Transportation_System/blob/master/images/Hi3861V100%E4%B8%BA%E6%A0%B8%E5%BF%83%E6%9D%BF%E7%9A%84%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E5%A5%97%E4%BB%B6.jpg)
 -  YL-62避障传感器
 ![YL-62避障传感器]()
 
